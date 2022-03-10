@@ -13,7 +13,7 @@ weishu = int(weishu) #这是多少位
 for i in range(shuliang):
     for j in range(weishu):
         suijishu.append(random.choice(range(10)))
-        while suijishu[j] == suijishu[j - 1] and j > 0:
-            suijishu[j] = random.choice(range(10))
+        while suijishu[weishu * i + j] == suijishu[weishu * i + j- 1] and j > 0:
+            suijishu[weishu * i + j] = random.choice(range(10))
         print(suijishu[weishu * i + j], end="")
     print("")

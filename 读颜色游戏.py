@@ -7,11 +7,11 @@ document: object = Document()
 p = document.add_paragraph('')
 
 yanse = [RGBColor(160, 32, 240), RGBColor(255, 215, 0), RGBColor(0, 0, 0), RGBColor(255, 0, 0), RGBColor(0, 255, 0),
-         RGBColor(0, 0, 255)]
+         RGBColor(0, 255, 255)]
 text = ["紫 ", "黄 ", "黑 ", "红 ", "绿 ", "蓝 "]
 # dayin是随机颜色
 dayin: list[int] = []
-shuliang: int = 70
+shuliang: int = 72
 j = []
 # 把dayin填充够shuliang个随机数
 for i in range(shuliang):
