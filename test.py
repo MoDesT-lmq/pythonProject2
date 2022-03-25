@@ -1,13 +1,11 @@
-i1=i2=i3=i4=i5=zongshu=1
-while i5:
-    i4 = i5*5 / 4
-    if i4.is_integer():
-        i3=(i4*5++4)/4
-        if i3.is_integer():
-            i2=(i3*5+3)/4
-            if i2.is_integer():
-                i1=(i2*5+2)/4
-                if i1.is_integer():
-                    print(i1*5+1)
-                    break
-    i5+=1
+import matplotlib.pyplot as plt  # 导入pyplot模块并设置别名为plt
+
+squares = [0,1, 4, 9, 16, 25]
+plt.plot(squares, linewidth=5)  # 函数linewidth设置绘制线条的粗细
+# 设置图表标题，并给坐标轴加上标签
+plt.title('Square number', fontsize=24)
+plt.xlabel('Value', fontsize=14)
+plt.ylabel('Square of Value', fontsize=14)
+# 设置刻度标记的大小
+plt.tick_params(axis='both', labelsize=14)
+plt.show()  # 打开matplotib查看器，并显示绘制的图形

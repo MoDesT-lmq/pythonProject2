@@ -22,4 +22,6 @@ for i in range(shuliang):
         p.add_run(str(suijishu[weishu * i + j]))
     p = document.add_paragraph('')
 
-document.save('/home/lmq/Desktop/数字倒读.docx')
+document.save('C:\liumi\Desktop\python项目\project2\数字记忆游戏.docx')
+# '/home/lmq/Desktop/数字倒读.docx'
+# C:\liumi\Desktop\python项目\project2\数字记忆游戏.docx

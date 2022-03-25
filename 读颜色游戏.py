@@ -11,7 +11,7 @@ text = ["紫 ", "黄 ", "黑 ", "红 ", "绿 ", "蓝 "]
 
 # dayin是随机颜色
 dayin: list[int] = []
-shuliang: int = 72
+shuliang: int = 81
 j = []
 # 把dayin填充够shuliang个随机数
 for i in range(shuliang):
@@ -28,4 +28,6 @@ p = document.add_paragraph('')
 for i in dayin:
     p.add_run(text[i]).font.color.rgb = yanse[i]
 
-document.save('/home/lmq/Desktop/读颜色游戏.docx')
+document.save('C:\liumi\Desktop\python项目\project2\读颜色游戏.docx')
+# '/home/lmq/Desktop/读颜色游戏.docx'
+# C:\liumi\Desktop\python项目\project2\读颜色游戏.docx
